@@ -1,7 +1,7 @@
-insert into OFFICE (office_id, office_name, address) values (10091, 'Sales', '15920 Marcy Place');
-insert into OFFICE (office_id, office_name, address) values (10012, 'Product Management', '7797 Division Court');
-insert into OFFICE (office_id, office_name, address) values (10047, 'Accounting', '01272 Nevada Crossing');
-insert into OFFICE (office_id, office_name, address) values (10099, 'Training', '3 Northland Way');
+insert into OFFICE (office_id, office_name, address) values (10001, 'Sales', '15920 Marcy Place');
+insert into OFFICE (office_id, office_name, address) values (10002, 'Product Management', '7797 Division Court');
+insert into OFFICE (office_id, office_name, address) values (10003, 'Accounting', '01272 Nevada Crossing');
+insert into OFFICE (office_id, office_name, address) values (10004, 'Training', '3 Northland Way');
 insert into OFFICE (office_id, office_name, address) values (10033, 'Support', '7682 Bashford Avenue');
 insert into OFFICE (office_id, office_name, address) values (10015, 'Accounting', '18 Sage Avenue');
 insert into OFFICE (office_id, office_name, address) values (10028, 'Research and Development', '39092 Pennsylvania Way');
