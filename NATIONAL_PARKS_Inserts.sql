@@ -9,10 +9,6 @@ INSERT into NATIONAL_PARK values(107, Buffalo National River, Arkansas, 35.98551
 INSERT into NATIONAL_PARK values(108, Hot Springs National Park, Arkansas, 34.521530, -93.042267);
 INSERT into NATIONAL_PARK values(109, Kartchner Caverns State Park, Arizona, 31.837551, -110.347382);
 INSERT into NATIONAL_PARK values(110, Sipsey Wilderness, Alabama, 34.332035, -87.434799);
-INSERT into NATIONAL_PARK values(107, Buffalo National River, Arkansas, 35.985512, -92.757652);
-INSERT into NATIONAL_PARK values(108, Hot Springs National Park, Arkansas, 34.521530, -93.042267);
-INSERT into NATIONAL_PARK values(109, Kartchner Caverns State Park, Arizona, 31.837551, -110.347382);
-INSERT into NATIONAL_PARK values(110, Sipsey Wilderness, Alabama, 34.332035, -87.434799);
 INSERT into NATIONAL_PARK values(111, Wrangell-St. Elias National Park & Preserve, Alaska, 61.710445, -142.985687);
 INSERT into NATIONAL_PARK values(112, Lake Clark National Park and Preserve, Alaska, 60.412697, -154.323502);
 INSERT into NATIONAL_PARK values(113, Katmai National Park and Preserve, Alaska, 58.597813, -154.693756);
