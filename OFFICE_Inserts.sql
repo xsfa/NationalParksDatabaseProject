@@ -18,7 +18,7 @@ insert into OFFICE (office_id, office_name, address) values (10000, 'Services', 
 insert into OFFICE (office_id, office_name, address) values (10041, 'Training', '0 2nd Terrace');
 insert into OFFICE (office_id, office_name, address) values (10091, 'Research and Development', '387 Cardinal Alley');
 insert into OFFICE (office_id, office_name, address) values (10016, 'Business Development', '095 Arkansas Crossing');
-insert into OFFICE (office_id, office_name, address) values (10065, 'Sales', '82659 Sunnyside Pass');
+insert into OFFICE (office_id, office_name, address) values (10002, 'Sales', '82659 Sunnyside Pass');
 insert into OFFICE (office_id, office_name, address) values (10014, 'Support', '0238 Fallview Avenue');
 insert into OFFICE (office_id, office_name, address) values (10075, 'Engineering', '761 Oriole Court');
 insert into OFFICE (office_id, office_name, address) values (10054, 'Support', '9 Myrtle Plaza');
