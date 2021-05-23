@@ -1,4 +1,4 @@
-INSERT into ATTRACTION values(133, 'Old Faithful', Geyser, 44.2848973, -110.1914074);
+INSERT into ATTRACTION values(133, 'Old Faithful', 'Geyser', 44.2848973, -110.1914074);
 INSERT into ATTRACTION values(133, 'Grand Prismatic Spring', 'Hot Spring', 4.5736638, -110.1985125);
 INSERT into ATTRACTION values(133, 'Yellowstone Lake', 'Lake', 44.5079579, -110.5003215);
 INSERT into ATTRACTION values(133, 'Upper Falls of the Yellowstone River', 'River', 44.7203351, -110.6118298);
@@ -45,10 +45,10 @@ INSERT into ATTRACTION values(128, 'Eunice Lake', 'Lake', 46.9707987, -121.10405
 INSERT into ATTRACTION values(128, 'Little Tahoma Peak', 'Viewpoint', 46.0561917, -121.923828);
 INSERT into ATTRACTION values(128, 'Pinnacle Peak', 'Viewpoint', 46.4189633, -121.2313523);
 INSERT into ATTRACTION values(128, 'Carbon Glacier', 'Glacier', 46.0635136, -121.9975574);
-INSERT into ATTRACTION values(128, 'Emmons Glacier', Glacier', 46.1361427, -121.1520167);
+INSERT into ATTRACTION values(128, 'Emmons Glacier', 'Glacier', 46.1361427, -121.1520167);
 INSERT into ATTRACTION values(128, 'Bench Lake', 'Lake', 46.6039851, -121.0455234);
 INSERT into ATTRACTION values(128, 'Spray Falls', 'Waterfall', 46.6170994, -121.1427416); 
-INSERT into ATTRACTION values(128, 'Kautz Glacier', Glacier', 46.5011682, -121.9172469);
+INSERT into ATTRACTION values(128, 'Kautz Glacier', 'Glacier', 46.5011682, -121.9172469);
 INSERT into ATTRACTION values(124, 'Takahula Lake', 'Lake', 67.4754885, -153.7747757);
 INSERT into ATTRACTION values(124, 'Alatna National Wild & Scenic River', 67.6081917, -153.3889438);
 INSERT into ATTRACTION values(124, 'Mount Igikpak', 'Mountain', 67.6081917, -153.3889438);
