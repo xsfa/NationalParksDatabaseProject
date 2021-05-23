@@ -24,7 +24,7 @@ INSERT into ATTRACTION values(133, 'Excelsior Geyser Crater', 'Geyser', 44.91038
 INSERT into ATTRACTION values(133, 'Beehive Geyser', 'Geyser', 44.0813284, -110.7312626);
 INSERT into ATTRACTION values(133, 'Bunsen Peak', 'Viewpoint', 44.8369017, -110.3343226);
 INSERT into ATTRACTION values(133, 'Firehole Falls', 'Waterfall', 44.6061683, -110.2910943);
-INSERT into ATTRACTION values(133, 'Undine Falls', 'Waterfall', '44.4233181, -110.7439608);
+INSERT into ATTRACTION values(133, 'Undine Falls', 'Waterfall', 44.4233181, -110.7439608);
 INSERT into ATTRACTION values(133, 'Biscuit Basin Geyser', 'Geyser', 44.6475046, -110.8428586);
 INSERT into ATTRACTION values(133, 'Kepler Cascades', 'River', 44.8865955, -110.3358565);
 INSERT into ATTRACTION values(133, 'Heart Lake', 'Lake', 44.8794615, -110.0799225);
