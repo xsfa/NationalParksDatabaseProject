@@ -79,7 +79,7 @@ INSERT into HIKING_TRAIL values(1077, 'Mirror Lake Loop Trail', 4.2, 'Moderate',
 INSERT into HIKING_TRAIL values(1078, 'McNeil Point Trail', 8.5, 'Strenuous', 45.0898751, -121.5218007);
 INSERT into HIKING_TRAIL values(1079, 'Timberline Trail Around Mount Hood', 41.4, 'Strenuous', 45.261892, -121.2031625);
 INSERT into HIKING_TRAIL values(1080, 'Trillium Lake Loop Trail', 1.9, 'Easy', 45.6073638, -121.6564959);
-INSERT into HIKING_TRAIL values(1081, 'Angels Rest to Devil's Rest Loop Trail', 10, 'Strenuous', 45.107357, -121.3548862);
+INSERT into HIKING_TRAIL values(1081, 'Angels Rest to Devils Rest Loop Trail', 10, 'Strenuous', 45.107357, -121.3548862);
 INSERT into HIKING_TRAIL values(1082, 'Bald Mountain from Lolo Pass Trail', 6.7, 'Moderate', 45.7050678, -121.9156793);
 INSERT into HIKING_TRAIL values(1083, 'Memaloose and Clackamas Falls', 5.7, 'Strenuous', 45.8461271, -121.3419116);
 INSERT into HIKING_TRAIL values(1084, 'Umbrella Falls Trail', 3.9, 'Moderate', 45.7356743, -121.4451307);
