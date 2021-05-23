@@ -16,7 +16,6 @@ CREATE TABLE OFFICE
         office_name VARCHAR(30) NOT NULL
         address VARCHAR(40) NOT NULL
 
-
         PRIMARY KEY(office_id)
 );
 
@@ -45,9 +44,9 @@ CREATE TABLE ATTRACTION
 
         PRIMARY KEY(attraction_name, P_park_id),
 	FOREIGN KEY (P_park_id) References NATIONAL_PARK(park_id),
-	CONSTRAINT type CHECK (type IN ‘Waterfall’, ‘Mountain’, ‘Cave’, ‘River’, ‘Lake’
+	CONSTRAINT type CHECK (type IN (‘Waterfall’, ‘Mountain’, ‘Cave’, ‘River’, ‘Lake’
 	‘Wetland’, ‘Forest’, ‘Geyser’, ‘Canyon’, ‘Valley’, ‘Volcano’, ‘Basin’, ‘Viewpoint’, 
-	‘Hot Springs’, ‘Glacier’, ‘Creek’, ‘Sand Dunes’);
+	‘Hot Springs’, ‘Glacier’, ‘Creek’, ‘Sand Dunes’))
 );
 
 
@@ -62,10 +61,8 @@ CREATE TABLE HIKING_TRAIL
 
 
         PRIMARY KEY(trail_id)
-        CONSTRAINT type CHECK (type IN ‘Easy’, ‘Moderate’, ‘Strenuous’)
+        CONSTRAINT type CHECK (type IN (‘Easy’, ‘Moderate’, ‘Strenuous’))
 );
-
-
 
 
 CREATE TABLE STAFF
