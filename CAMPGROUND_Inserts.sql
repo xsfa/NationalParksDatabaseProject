@@ -19,7 +19,7 @@ INSERT into CAMPGROUND values(133, 'Yellowstone Holiday RV Campground', 370, 44.
 INSERT into CAMPGROUND values(133, 'Tower Fall Campground', 95, 44.0302035, -110.1511167);
 INSERT into CAMPGROUND values(133, 'Indian Creek Campground', 188, 44.1834192, -110.1867547);
 INSERT into CAMPGROUND values(128, 'Mowich Lake', 393, 46.5728997, -121.2526504);
-INSERT into CAMPGROUND values(128, 'Carbon River Camp, 341, 46.9686433, -121.9222244);
+INSERT into CAMPGROUND values(128, 'Carbon River Camp', 341, 46.9686433, -121.9222244);
 INSERT into CAMPGROUND values(128, 'Cougar Raock Campground', 84, 46.3556028, -121.9696827);
 INSERT into CAMPGROUND values(128, 'Sunrise Walk-In Camp', 285, 46.6169637, -121.7680973);
 INSERT into CAMPGROUND values(128, 'Big Creek Campground', 19, 46.2456232, -121.3372345);
@@ -81,8 +81,8 @@ INSERT into CAMPGROUND values(181, 'Rising Sun Campground', 106, 48.3894841, -11
 INSERT into CAMPGROUND values(181, 'St. Mary Campgrounds', 90, 48.2221055, -113.8141923);
 INSERT into CAMPGROUND values(179, 'Deer Park Campground', 14, 47.368715, -123.5896154);
 INSERT into CAMPGROUND values(179, 'Fairholme Campground', 164, 47.6417949, -123.3701129);
-INSERT into CAMPGROUND values(179, 'Graves Creek Campground', 119, 47.9477849, '123.5224866');
-INSERT into CAMPGROUND values(179, 'Heart O' the Hills Campground', 94, 47.4477755, -123.7036782);
+INSERT into CAMPGROUND values(179, 'Graves Creek Campground', 119, 47.9477849, 123.5224866);
+INSERT into CAMPGROUND values(179, 'Heart of the Hills Campground', 94, 47.4477755, -123.7036782);
 INSERT into CAMPGROUND values(179, 'Hoh Campground', 69, 47.9337903, -123.7887765);
 INSERT into CAMPGROUND values(179, 'Kalaloch Campground', 290, 47.3488281, -123.1395227);
 INSERT into CAMPGROUND values(179, 'Log Cabin RV & Campground', 58, 47.4902838, -123.1844642);
