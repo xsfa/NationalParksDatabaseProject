@@ -1,10 +1,10 @@
 ﻿CREATE TABLE NATIONAL_PARK
 (
-	park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999)
-	park_name VARCHAR(30) NOT NULL
-        state VARCHAR(20) NOT NULL
-	longitude FLOAT(10) NOT NULL
-        latitude FLOAT(10) NOT NULL
+	park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999),
+	park_name VARCHAR(30) NOT NULL,
+        state VARCHAR(20) NOT NULL,
+	longitude FLOAT(10) NOT NULL,
+        latitude FLOAT(10) NOT NULL,
 
 	PRIMARY KEY (id)
 );
@@ -12,9 +12,9 @@
 
 CREATE TABLE OFFICE
 (
-        office_id INT NOT NULL CHECK (office_id >= 10000 AND office_id <= 99999)
-        office_name VARCHAR(30) NOT NULL
-        address VARCHAR(40) NOT NULL
+        office_id INT NOT NULL CHECK (office_id >= 10000 AND office_id <= 99999),
+        office_name VARCHAR(30) NOT NULL,
+        address VARCHAR(40) NOT NULL,
 
         PRIMARY KEY(office_id)
 );
@@ -22,11 +22,11 @@ CREATE TABLE OFFICE
 
 CREATE TABLE CAMPGROUND
 (
-        P_park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999)
-        campground_name VARCHAR(30) NOT NULL
-        max_occupancy INT NOT NULL (max_occupancy >= 1)
-        longitude FLOAT(10) NOT NULL
-        latitude FLOAT(10) NOT NULL
+        P_park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999),
+        campground_name VARCHAR(30) NOT NULL,
+        max_occupancy INT NOT NULL (max_occupancy >= 1),
+        longitude FLOAT(10) NOT NULL,
+        latitude FLOAT(10) NOT NULL,
         
         PRIMARY KEY(campground_name, P_park_id),
         FOREIGN KEY(P_park_id) References NATIONAL_PARK(park_id)
@@ -35,11 +35,11 @@ CREATE TABLE CAMPGROUND
 
 CREATE TABLE ATTRACTION 
 (
-        P_park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999)
-        attraction_name VARCHAR(30) NOT NULL
-        type VARCHAR(20) NOT NULL
-        longitude FLOAT(10) NOT NULL
-        latitude FLOAT(10) NOT NULL
+        P_park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999),
+        attraction_name VARCHAR(30) NOT NULL,
+        type VARCHAR(20) NOT NULL,
+        longitude FLOAT(10) NOT NULL,
+        latitude FLOAT(10) NOT NULL,
 
 
         PRIMARY KEY(attraction_name, P_park_id),
@@ -52,15 +52,15 @@ CREATE TABLE ATTRACTION
 
 CREATE TABLE HIKING_TRAIL
 (
-        trail_id INT NOT NULL CHECK (trail_id >= 1000 AND trail_id <= 9999)
-	trail_name VARCHAR(30) NOT NULL
-        length FLOAT(3) NOT NULL
-        difficulty INT NOT NULL 
-        longitude FLOAT(10) NOT NULL
-        latitude FLOAT(10) NOT NULL
+        trail_id INT NOT NULL CHECK (trail_id >= 1000 AND trail_id <= 9999),
+	trail_name VARCHAR(30) NOT NULL,
+        length FLOAT(3) NOT NULL,
+        difficulty INT NOT NULL,
+        longitude FLOAT(10) NOT NULL,
+        latitude FLOAT(10) NOT NULL,
 
 
-        PRIMARY KEY(trail_id)
+        PRIMARY KEY(trail_id),
         CONSTRAINT type CHECK (type IN (‘Easy’, ‘Moderate’, ‘Strenuous’))
 );
 
