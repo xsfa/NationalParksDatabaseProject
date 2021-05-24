@@ -24,7 +24,7 @@ INSERT into HIKING_TRAIL values(1022, 'Biscayne National Park Walk', 9.9, 'Easy'
 INSERT into HIKING_TRAIL values(1023, 'Boca Cita Trial', 0.8, 'Easy', 25.0354808, -80.1954983);
 INSERT into HIKING_TRAIL values(1024, 'Biscayne Trail', 5.3, 'Easy', 25.884123, -80.7472224);
 INSERT into HIKING_TRAIL values(1025, 'Adams Key Loop Trail', 0.5, 'Easy', 25.0035853, -80.7472224);
-INSERT into HIKING_TRAIL values(1026, 'Elliot Key Loop Trail', 1.1, 'Easy', 25.3033759	-80.7741139);
+INSERT into HIKING_TRAIL values(1026, 'Elliot Key Loop Trail', 1.1, 'Easy', 25.3033759,	-80.7741139);
 INSERT into HIKING_TRAIL values(1027, 'Spite Highway Trail', 7, 'Easy', 25.4152245, -80.3709284);
 INSERT into HIKING_TRAIL values(1028, 'Convoy Point', 0.6, 'Easy', 25.6757219, -80.7915677);
 INSERT into HIKING_TRAIL values(1029, 'Cascade Canyon Trail', 9.1, 'Moderate', 43.8487192, -110.4988772);
@@ -56,7 +56,7 @@ INSERT into HIKING_TRAIL values(1054, 'Bearpaw and Trapper Lake Trail', 7.8, 'Mo
 INSERT into HIKING_TRAIL values(1055, 'Death Canyon and Phelps Lake', 7.6, 'Moderate', 43.5611297, -110.443306);
 INSERT into HIKING_TRAIL values(1056, 'Mormons Row Moulton Barn', 0.1, 'Easy', 43.4348097, -110.5442128);
 INSERT into HIKING_TRAIL values(1057, 'The Beehive Loop Trail', 1.5, 'Strenuous', 44.106265, -68.5165529);
-INSERT into HIKING_TRAIL values(1058, 'Cadillac North Ridge Trail', 4, 'Hard', 44.4874105, -68.0296221);
+INSERT into HIKING_TRAIL values(1058, 'Cadillac North Ridge Trail', 4, 'Strenuous', 44.4874105, -68.0296221);
 INSERT into HIKING_TRAIL values(1059, 'Jordan Pond Full Loop Trail', 3.4, 'Moderate', 44.5242566, -68.2294974);
 INSERT into HIKING_TRAIL values(1060, 'Ocean Path and Gorham Mountain Loop Trail', 3.1, 'Moderate', 44.5722606, -68.9606448);
 INSERT into HIKING_TRAIL values(1061, 'Cadillac Mountain South Ridge Trail Loop', 8, 'Moderate', 44.3273294, -68.4283924);
