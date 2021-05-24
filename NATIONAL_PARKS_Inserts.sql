@@ -28,7 +28,7 @@ INSERT into NATIONAL_PARK values(126, 'Mesa Verde National Park', 'Colorado', 37
 INSERT into NATIONAL_PARK values(127, 'Arches National Park', 'Utah', 38.733082, -109.592514);
 INSERT into NATIONAL_PARK values(128, 'Mount Rainier National Park', 'Washington', 46.879967, -121.726906);
 INSERT into NATIONAL_PARK values(129, 'Kenai Fjords National Park', 'Alaska', 60.043777, -149.816360);
-INSERT into NATIONAL_PARK values(130, 'Anahuac National Wildlife Refuge', 'Texas', 29.610300	-94.449081);
+INSERT into NATIONAL_PARK values(130, 'Anahuac National Wildlife Refuge', 'Texas', 29.610300, -94.449081);
 INSERT into NATIONAL_PARK values(131, 'Bandelier National Monument', 'New Mexico', 35.767288, -106.311607);
 INSERT into NATIONAL_PARK values(132, 'Summit Bechtel Reserve', 'West Virginia', 37.916035, -81.123047);
 INSERT into NATIONAL_PARK values(133, 'Yellowstone National Park', 'Wyoming', 44.427895, -110.588379);
@@ -42,7 +42,7 @@ INSERT into NATIONAL_PARK values(140, 'Cherry Creek State Park', 'Colorado', 39.
 INSERT into NATIONAL_PARK values(141, 'Kissimmee Prairie Preserve State Park', 'Florida', 27.612417, -81.053383);
 INSERT into NATIONAL_PARK values(142, 'Garden of Gods', 'Colorado', 38.873840, -104.886665);
 INSERT into NATIONAL_PARK values(143, 'Petrified Forest National Park', 'Arizona', 34.909988, -109.806793);
-INSERT into NATIONAL_PARK values(144, 'Chattahoochee National Forest', 'Georgia', 34.765972	-84.143517);
+INSERT into NATIONAL_PARK values(144, 'Chattahoochee National Forest', 'Georgia', 34.765972, -84.143517);
 INSERT into NATIONAL_PARK values(145, 'Little Sandy National Wildlife Refuge', 'Texas', 32.590797, -95.273666);
 INSERT into NATIONAL_PARK values(146, 'Siuslaw National Forest', 'Oregon', 44.358715, -123.829994);
 INSERT into NATIONAL_PARK values(147, 'Kings Canyon National Park', 'California', 36.887856, -118.555145);
