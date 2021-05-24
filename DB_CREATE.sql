@@ -71,7 +71,7 @@ CREATE TABLE STAFF
         name VARCHAR(15) NOT NULL,
         gender CHAR,
         salary DECIMAL(10,2),
-        super_ssn CHAR(9),
+        super_ssn CHAR(11),
         O_office_id INT,
         P_park_id INT NOT NULL,
 
@@ -113,7 +113,7 @@ CREATE TABLE ATTRACTION_STAFF
 
 CREATE TABLE HIKING_TRAIL_STAFF
 (
-        S_ssn CHAR(9) NOT NULL,
+        S_ssn CHAR(11) NOT NULL,
         H_trail_id INT NOT NULL,
 
 
