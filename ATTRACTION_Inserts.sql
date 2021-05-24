@@ -1,5 +1,5 @@
 INSERT into ATTRACTION values(133, 'Old Faithful', 'Geyser', 44.2848973, -110.1914074);
-INSERT into ATTRACTION values(133, 'Grand Prismatic Spring', 'Hot Spring', 4.5736638, -110.1985125);
+INSERT into ATTRACTION values(133, 'Grand Prismatic Spring', 'Hot Springs', 4.5736638, -110.1985125);
 INSERT into ATTRACTION values(133, 'Yellowstone Lake', 'Lake', 44.5079579, -110.5003215);
 INSERT into ATTRACTION values(133, 'Upper Falls of the Yellowstone River', 'River', 44.7203351, -110.6118298);
 INSERT into ATTRACTION values(133, 'Mammoth Hot Springs', 'Hot Springs', 44.7543709, -110.6855969);
@@ -50,7 +50,7 @@ INSERT into ATTRACTION values(128, 'Bench Lake', 'Lake', 46.6039851, -121.045523
 INSERT into ATTRACTION values(128, 'Spray Falls', 'Waterfall', 46.6170994, -121.1427416); 
 INSERT into ATTRACTION values(128, 'Kautz Glacier', 'Glacier', 46.5011682, -121.9172469);
 INSERT into ATTRACTION values(124, 'Takahula Lake', 'Lake', 67.4754885, -153.7747757);
-INSERT into ATTRACTION values(124, 'Alatna National Wild & Scenic River', 67.6081917, -153.3889438);
+INSERT into ATTRACTION values(124, 'Alatna National Wild & Scenic River', 'River', 67.6081917, -153.3889438);
 INSERT into ATTRACTION values(124, 'Mount Igikpak', 'Mountain', 67.6081917, -153.3889438);
 INSERT into ATTRACTION values(124, 'Tinayguk River', 'River', 67.3067285, -153.8286419);
 INSERT into ATTRACTION values(124, 'Frigid Crags', 'River', 67.411836, -153.0239485);
@@ -78,7 +78,7 @@ INSERT into ATTRACTION values(199, 'Mount Zwischen', 'Mountain', 37.1576593, -10
 INSERT into ATTRACTION values(199, 'Great Sand Dunes', 'Sand Dunes', 37.1460526, -105.0586412);
 INSERT into ATTRACTION values(199, 'Mosca Creek', 'Creek', 37.7265494, -105.9465359);
 INSERT into ATTRACTION values(199, 'Cleveland Peak', 'Viewpoint', 37.0374097, -105.6039904);
-INSERT into ATTRACTION values(199, 'Tijeras Peak', 'Viewpoint', 37.6275439, -105.7258052)
+INSERT into ATTRACTION values(199, 'Tijeras Peak', 'Viewpoint', 37.6275439, -105.7258052);
 INSERT into ATTRACTION values(199, 'Cold Creek', 'Creek', 37.8701878, -105.5049983);
 INSERT into ATTRACTION values(199, 'Deadman Lakes', 'Lake', 37.4906153, -105.4382771);
 INSERT into ATTRACTION values(199, 'Little Sand Creek Lakes', 'Lake', 37.99667, -105.652552);
