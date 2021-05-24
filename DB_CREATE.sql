@@ -1,7 +1,7 @@
 ﻿CREATE TABLE NATIONAL_PARK
 (
 	park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999),
-	park_name VARCHAR(30) NOT NULL,
+	park_name VARCHAR(100) NOT NULL,
         state VARCHAR(20) NOT NULL,
 	longitude FLOAT(10) NOT NULL,
         latitude FLOAT(10) NOT NULL,
