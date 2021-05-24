@@ -6,7 +6,7 @@
 	longitude FLOAT(10) NOT NULL,
         latitude FLOAT(10) NOT NULL,
 
-	PRIMARY KEY (id)
+	PRIMARY KEY (park_id)
 );
 
 
@@ -22,9 +22,9 @@ CREATE TABLE OFFICE
 
 CREATE TABLE CAMPGROUND
 (
-        P_park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999),
+        P_park_id INT NOT NULL CHECK (P_park_id >=100 AND P_park_id <= 999),
         campground_name VARCHAR(30) NOT NULL,
-        max_occupancy INT NOT NULL (max_occupancy >= 1),
+        max_occupancy INT NOT NULL CHECK (max_occupancy >= 1),
         longitude FLOAT(10) NOT NULL,
         latitude FLOAT(10) NOT NULL,
         
@@ -35,18 +35,18 @@ CREATE TABLE CAMPGROUND
 
 CREATE TABLE ATTRACTION 
 (
-        P_park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999),
+        P_park_id INT NOT NULL CHECK ( P_park_id >=100 AND  P_park_id <= 999),
         attraction_name VARCHAR(30) NOT NULL,
-        type VARCHAR(20) NOT NULL,
+        type VARCHAR(30) NOT NULL,
         longitude FLOAT(10) NOT NULL,
         latitude FLOAT(10) NOT NULL,
 
 
         PRIMARY KEY(attraction_name, P_park_id),
 	FOREIGN KEY (P_park_id) References NATIONAL_PARK(park_id),
-	CONSTRAINT type CHECK (type IN (‘Waterfall’, ‘Mountain’, ‘Cave’, ‘River’, ‘Lake’
-	‘Wetland’, ‘Forest’, ‘Geyser’, ‘Canyon’, ‘Valley’, ‘Volcano’, ‘Basin’, ‘Viewpoint’, 
-	‘Hot Springs’, ‘Glacier’, ‘Creek’, ‘Sand Dunes’))
+	CONSTRAINT type_check CHECK (type IN ('Waterfall', 'Mountain', 'Cave', 'River', 'Lake',
+	'Wetland', 'Forest', 'Geyser', 'Canyon', 'Valley', 'Volcano', 'Basin', 'Viewpoint', 
+	'Hot Springs', 'Glacier', 'Creek', 'Sand Dunes'))
 );
 
 
@@ -55,13 +55,13 @@ CREATE TABLE HIKING_TRAIL
         trail_id INT NOT NULL CHECK (trail_id >= 1000 AND trail_id <= 9999),
 	trail_name VARCHAR(30) NOT NULL,
         length FLOAT(3) NOT NULL,
-        difficulty INT NOT NULL,
+        difficulty VARCHAR(30) NOT NULL,
         longitude FLOAT(10) NOT NULL,
         latitude FLOAT(10) NOT NULL,
 
 
         PRIMARY KEY(trail_id),
-        CONSTRAINT type CHECK (type IN (‘Easy’, ‘Moderate’, ‘Strenuous’))
+	CONSTRAINT difficulty_check CHECK (difficulty IN ('Easy', 'Moderate', 'Strenuous'))
 );
 
 
