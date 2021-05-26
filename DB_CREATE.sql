@@ -68,8 +68,8 @@ CREATE TABLE HIKING_TRAIL
 CREATE TABLE STAFF
 (
         ssn CHAR(11) NOT NULL,
-        name VARCHAR(15) NOT NULL,
-        gender CHAR,
+        name VARCHAR(30) NOT NULL,
+        gender VARCHAR(20) NOT NULL CHECK (gender IN ('Male', 'Female','Non-Binary')),
         salary DECIMAL(10,2),
         super_ssn CHAR(11),
         O_office_id INT,
@@ -78,8 +78,7 @@ CREATE TABLE STAFF
 
         PRIMARY KEY (ssn),
         FOREIGN KEY (O_office_id) REFERENCES OFFICE (office_id),
-        FOREIGN KEY (P_park_id) REFERENCES NATIONAL_PARK (park_id),
-        CONSTRAINT staffGender CHECK (gender in ('Male', 'Female','Non-Binary'))
+        FOREIGN KEY (P_park_id) REFERENCES NATIONAL_PARK (park_id)
 );
 
 
@@ -88,7 +87,7 @@ CREATE TABLE STAFF
 CREATE TABLE CAMPGROUND_STAFF
 (
         S_ssn CHAR(11) NOT NULL,
-        CG_name VARCHAR(30) NOT NULL,
+        CG_name VARCHAR(70) NOT NULL,
         P_park_id INT NOT NULL,
 
 
@@ -101,7 +100,7 @@ CREATE TABLE CAMPGROUND_STAFF
 CREATE TABLE ATTRACTION_STAFF
 (
         S_ssn CHAR(11) NOT NULL,
-        Att_name VARCHAR(30) NOT NULL,
+        Att_name VARCHAR(70) NOT NULL,
         P_park_id INT NOT NULL,
 
 
