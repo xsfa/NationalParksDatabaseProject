@@ -163,7 +163,7 @@ CREATE TABLE ANIMAL (
 );
 
 
-CREATE TABLE Flora_Grow (
+CREATE TABLE FLORA_GROW (
     F_species VARCHAR(45) NOT NULL,
     F_park_id INT NOT NULL CHECK (park_id >= 100 AND  park_id <= 999),
 
