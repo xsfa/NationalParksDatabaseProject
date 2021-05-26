@@ -143,7 +143,7 @@ CREATE TABLE VISITOR (
     annual_pass_holder BIT(1),
 
 
-    PRIMARY KEY(V_park_id, VisitorNum),
+    PRIMARY KEY(VisitorNum),
     FOREIGN KEY(V_park_id) REFERENCES NATIONAL_PARK(park_id)
 );
 
