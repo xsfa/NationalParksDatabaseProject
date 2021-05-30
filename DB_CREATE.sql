@@ -164,22 +164,22 @@ CREATE TABLE ANIMAL (
 
 CREATE TABLE FLORA_GROW (
     F_species VARCHAR(45) NOT NULL,
-    F_park_id INT NOT NULL CHECK (park_id >= 100 AND  park_id <= 999),
+    F_park_id INT NOT NULL CHECK (F_park_id >= 100 AND  F_park_id <= 999),
 
 
    PRIMARY KEY(F_species, F_park_id),
-   FOREIGN KEY(F_species) REFERENCES Flora(Species),
+   FOREIGN KEY(F_species) REFERENCES FLORA(species),
    FOREIGN KEY(F_park_id) REFERENCES NATIONAL_PARK(park_id)
 );
 
 
 CREATE TABLE ANIMAL_INHABIT (
     A_species VARCHAR(45) NOT NULL, 
-    A_park_id INT NOT NULL CHECK (park_id >= 100 AND  park_id <= 999),
+    A_park_id INT NOT NULL CHECK (A_park_id >= 100 AND  A_park_id <= 999),
     Est_pop INT,
 
 
     PRIMARY KEY(A_species, A_park_id),
-    FOREIGN KEY(A_species) REFERENCES ANIMAL(Species),
+    FOREIGN KEY(A_species) REFERENCES ANIMAL(species),
     FOREIGN KEY(A_park_id) REFERENCES NATIONAL_PARK(park_id)
 );
