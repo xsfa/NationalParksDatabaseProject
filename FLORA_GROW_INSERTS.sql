@@ -1,7 +1,3 @@
-CREATE TABLE FLORA_GROW(
-   F_species VARCHAR(16) NOT NULL PRIMARY KEY
-  ,F_park_id INTEGER  NOT NULL
-);
 INSERT INTO FLORA_GROW(F_species,F_park_id) VALUES ('Pink Tickseed',100);
 INSERT INTO FLORA_GROW(F_species,F_park_id) VALUES ('Pink Tickseed',101);
 INSERT INTO FLORA_GROW(F_species,F_park_id) VALUES ('Pink Tickseed',102);
