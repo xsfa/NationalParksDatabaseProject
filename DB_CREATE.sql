@@ -133,7 +133,7 @@ CREATE TABLE HIKING_TRAIL_STAFF
 
 
 CREATE TABLE VISITOR (
-    V_park_ID INT NOT NULL CHECK (park_id >= 100 AND  park_id <= 999),
+    V_park_id INT NOT NULL CHECK (V_park_id >= 100 AND  V_park_id <= 999),
     fname VARCHAR(30) NOT NULL,
     lname VARCHAR(30) NOT NULL,
     gender VARCHAR(30) NOT NULL CHECK (gender IN ( 'Male', 'Non-binary', 'Female')),
@@ -142,7 +142,7 @@ CREATE TABLE VISITOR (
     annual_pass_holder BIT(1),
 
 
-    PRIMARY KEY(VisitorNum),
+    PRIMARY KEY(visitor_num),
     FOREIGN KEY(V_park_id) REFERENCES NATIONAL_PARK(park_id)
 );
 
