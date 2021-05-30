@@ -92,7 +92,6 @@ insert into ANIMAL (species) values ('Water legaan');
 insert into ANIMAL (species) values ('Currasow (unidentified)');
 insert into ANIMAL (species) values ('Red-billed toucan');
 insert into ANIMAL (species) values ('White-eye, cape');
-insert into ANIMAL (species) values ('Lechwe, kafue flats');
 insert into ANIMAL (species) values ('Pademelon, red-legged');
 insert into ANIMAL (species) values ('Shrike, crimson-breasted');
 insert into ANIMAL (species) values ('Common turkey');
