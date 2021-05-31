@@ -122,16 +122,6 @@ CREATE TABLE HIKING_TRAIL_STAFF
 );
 
 
-
-
-
-
-
-
-
-
-
-
 CREATE TABLE VISITOR (
     V_park_id INT NOT NULL CHECK (V_park_id >= 100 AND  V_park_id <= 999),
     fname VARCHAR(30) NOT NULL,
