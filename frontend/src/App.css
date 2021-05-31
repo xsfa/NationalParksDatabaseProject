@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  background: #183A6C; 
+  position: center; 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  text-align:center;
+  font-style: 'Red Hat Text';
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 85px;
+
+  color: white;
+}
+
+.search-bar {
+  color: #61dafb;
+  display: inline-block;
+  position: absolute;
+  width: 508px;
+  height: 88px;
+  left: 354px;
+  top: 242px;
+}
+
