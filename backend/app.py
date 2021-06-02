@@ -5,11 +5,26 @@
 
 
 from flask import Flask
+import pymysql
+import json
 app = Flask(__name__)
 
+conn = pymysql.connect(
+    host='database-1.chd1p5k2qlty.us-west-2.rds.amazonaws.com',
+    port=3306,
+    user='admin',
+    password='css475final',
+    db='nationalParksDB'
+)
+
+
+
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def test():
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM NATIONAL_PARK")
+    details = cur.fetchall()
+    return json.dumps(details)
 
 
 
