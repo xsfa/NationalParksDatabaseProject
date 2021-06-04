@@ -7,6 +7,8 @@
 from flask import Flask
 import pymysql
 import json
+from animals import animals_query
+
 app = Flask(__name__)
 
 conn = pymysql.connect(
@@ -18,13 +20,20 @@ conn = pymysql.connect(
 )
 
 
-
 @app.route('/')
 def test():
     cur = conn.cursor()
     cur.execute("SELECT * FROM NATIONAL_PARK")
     details = cur.fetchall()
     return json.dumps(details)
+
+
+@app.route('/animals')
+def animals():
+    return animals_query(conn)
+
+
+
 
 
 
