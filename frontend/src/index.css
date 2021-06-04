@@ -5,9 +5,9 @@ body {
     sans-serif, 'Red Hat Text';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
-width: 1440px;
-height: 900px;
+  position: center;
+  width: 1440px;
+  height: 900px;
 
 background: #183A6C;
 }
