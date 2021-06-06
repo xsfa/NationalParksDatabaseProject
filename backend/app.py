@@ -11,6 +11,8 @@ from animals import animals_query
 from flora import flora_query
 from hikingtrail import trail_query
 from visitors import visitors_query
+from attraction import attraction_query
+from campground import campground_query
 
 app = Flask(__name__)
 
@@ -21,6 +23,7 @@ conn = pymysql.connect(
     password='css475final',
     db='nationalParksDB'
 )
+
 
 def execute_query(query):
     cur = conn.cursor()
@@ -49,6 +52,7 @@ def animals():
     query = animals_query()
     return execute_query(query)
 
+
 @app.route('/flora')
 def flora():
     query = flora_query()
@@ -64,6 +68,18 @@ def hikingtrail():
 @app.route('/visitors')
 def visitors():
     query = visitors_query()
+    return execute_query(query)
+
+
+@app.route('/attractions')
+def attraction():
+    query = attraction_query()
+    return execute_query(query)
+
+
+@app.route('/campgrounds')
+def campground():
+    query = campground_query()
     return execute_query(query)
 
 
