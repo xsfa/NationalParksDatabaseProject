@@ -13,7 +13,7 @@ def getQuery(attribute, value, isCount):
     return query
 
 
-def campground_query():
+def national_park_query():
     params = request.args
     attribute = params['searchBy']
     value = params['filterValue']
