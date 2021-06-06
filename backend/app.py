@@ -8,6 +8,9 @@ from flask import Flask
 import pymysql
 import json
 from animals import animals_query
+from flora import flora_query
+from hikingtrail import trail_query
+from visitors import visitors_query
 
 app = Flask(__name__)
 
@@ -18,6 +21,19 @@ conn = pymysql.connect(
     password='css475final',
     db='nationalParksDB'
 )
+
+def execute_query(query):
+    cur = conn.cursor()
+    cur.execute(query)
+    details = cur.fetchall()
+    # get the column name
+    description = cur.description
+    columns = []
+    for des in description:
+        columns.append(des[0])
+    print(columns)
+    print(details)
+    return {"columnNames": columns, "records": details}
 
 
 @app.route('/')
@@ -30,15 +46,28 @@ def test():
 
 @app.route('/animals')
 def animals():
-    return animals_query(conn)
+    query = animals_query()
+    return execute_query(query)
+
+@app.route('/flora')
+def flora():
+    query = flora_query()
+    return execute_query(query)
 
 
+@app.route('/hikingtrails')
+def hikingtrail():
+    query = trail_query()
+    return execute_query(query)
 
 
+@app.route('/visitors')
+def visitors():
+    query = visitors_query()
+    return execute_query(query)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     app.run(debug=True)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
