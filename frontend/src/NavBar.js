@@ -1,13 +1,24 @@
-import React from 'react'
-import {Nav, Navbar, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
+import React, {Component, CollapsibleNav} from 'react'
+import ReactBootstrap, {Nav, Navbar, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 import './NavBar.css'
 
 
+const handleSelect=(eventKey) => {
+    console.log("User selected ", eventKey)
+};
+
+const handleSearch=(eventKey) => {
+    console.log("User sent ", eventKey)
+};
+
+
 const NavBar = () => {
-    return(
+    var eventKey;
+    return(        
         <>
-            <Navbar expand="lg" variant="light" bg="light">
-                <Nav className="mr-auto">
+            <Navbar variant="dark" bg="dark">
+                <Nav onSelect = {handleSelect} className="table_select">
+                    <Navbar.Brand > Select an attribute.. </Navbar.Brand>
                     <NavDropdown title="Parks" id="park_dropdowna">
                         <NavDropdown.Item eventKey="parks_name_chosen">Name</NavDropdown.Item>
                         <NavDropdown.Item eventKey="parks_state_chosen">State</NavDropdown.Item>
@@ -61,9 +72,14 @@ const NavBar = () => {
                     </NavDropdown>
                 </Nav>
             </Navbar>
-            <Form inline>
-                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                <Button variant="outline-light">Search. . .</Button>
+
+            <div>
+            </div>
+
+            <Form inline onSubmit={handleSearch}>
+                <FormControl type="text" placeholder="Search. . ." className="mr-sm-2" />
+                <Button variant="outline-light">Search</Button>
+                
             </Form>
 
             <Form.Group controlId="count_checkbox">

@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background: #183A6C; 
   position: relative; 
 }
 
@@ -18,16 +17,11 @@
   line-height: 85px;
   position: "center";
 
-  color: white;
+  color: black;
 }
 
 .search-bar {
-  color: #61dafb; 
-  display: inline-block;
-  position: absolute;
-  width: 508px;
-  height: 88px;
-  left: 354px;
-  top: 242px;
+  display: table-row;
+  position: relative;
 }
 
