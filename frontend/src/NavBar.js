@@ -1,16 +1,18 @@
 import React from 'react'
-import {Nav, Navbar, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
+import {Nav, Navbar, NavDropdown, Form} from 'react-bootstrap';
 import './NavBar.css'
+import Search from './Search';
 
-var attPrint;
 var count = 0;
+var attributeSelected = ""
+
 const handleSelect=(eventKey) => {
-    console.log("User selected ", eventKey)
+    attributeSelected = eventKey
+    console.log("User selected ", attributeSelected)
+
 };
 
-const handleSearch=(eventKey) => {
-    console.log("User sent ", eventKey)
-};
+
 
 function handleClick(){
     count++
@@ -24,7 +26,24 @@ function handleClick(){
 }
 
 
+
 const NavBar = () => {
+
+    //function handleSearch(input){
+      //  if (attributeSelected.length === 0) {
+      //      console.error("No Attribute Selected")
+      //  }
+    
+    //    var countQuestionMark = true
+    
+     //   if (count % 2 === 0) {
+    //        countQuestionMark = false
+    //    }
+    
+    //    console.log("searching in: ",attributeSelected, "counting results: ", countQuestionMark )
+   // }
+    
+
     return(        
         <>
             <Navbar variant="dark" bg="dark">
@@ -87,17 +106,13 @@ const NavBar = () => {
             <div>
             </div>
 
-            <Form inline>
-                <FormControl type="text" onSubmit={handleSearch} placeholder="Search. . ." className="mr-sm-2" />
-                <Button variant="outline-light">Search</Button>
-                
-            </Form>
 
             <Form.Group controlId="count_checkbox">
                 <Form.Check onChange={handleClick} type="checkbox" label="Result Count" />
             </Form.Group>
 
-            Attribute selected: {handleSelect}
+
+            <Search/>
         </>
     )
 

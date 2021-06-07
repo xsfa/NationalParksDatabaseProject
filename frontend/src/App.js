@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import NavBar from './NavBar.js';
 
+
 function App() {
   return (
     <>
@@ -10,13 +11,10 @@ function App() {
       <header className="App-header">
           National Park Database
       </header>
-      
       <>
       <NavBar/>
     </>
     </div>
-  
-
     </>
   );
 }
