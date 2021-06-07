@@ -8,7 +8,7 @@ def getQuery(attribute, value, isCount):
             "FROM STAFF " \
             "WHERE {} = '{}'".format(attribute, value)
 
-        elif attribute == "P_park_name":
+        elif attribute == "park_name":
             query = "SELECT S.name as Staff_Name, S.gender as Gender, S.salary as Salary, S.super_ssn as Supervisor SSN, S.O_office_id as Office_ID "\
             "FROM STAFF S JOIN NATIONAL_PARK N ON S.P_park_id = N.park_id " \
             "WHERE {} = '{}'".format(attribute, value)
