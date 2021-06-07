@@ -6,7 +6,6 @@ var attPrint;
 var count = 0;
 const handleSelect=(eventKey) => {
     console.log("User selected ", eventKey)
-    handleClick(eventKey)
 };
 
 const handleSearch=(eventKey) => {
