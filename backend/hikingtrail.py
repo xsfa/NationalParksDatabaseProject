@@ -2,13 +2,18 @@ from flask import request
 
 def getQuery(attribute, value, isCount):
     if not isCount:
-        query = "SELECT trail_name, length, difficulty, latitude, longitude " \
+        query = "SELECT trail_name, CAST(length AS float) AS length, difficulty, CAST(latitude AS float) AS latitude, CAST(longitude AS float) AS longitude " \
                 "FROM HIKING_TRAIL " \
                 "WHERE {} = '{}'".format(attribute, value)
     else:
-        query = "SELECT {}, count(*) AS Count" \
-                "FROM HIKING_TRAIL " \
-                "WHERE {} = '{}'".format(attribute, attribute, value)
+        if attribute == "length" or attribute == "latitude" or attribute == "longitude":
+            query = "SELECT CAST({} AS float) AS {}, count(*) AS Count " \
+                    "FROM HIKING_TRAIL " \
+                    "WHERE {} = '{}'".format(attribute, attribute, attribute, value)
+        else:
+            query = "SELECT {}, count(*) AS Count " \
+                    "FROM HIKING_TRAIL " \
+                    "WHERE {} = '{}'".format(attribute, attribute, value)
     print(query)
     return query
 

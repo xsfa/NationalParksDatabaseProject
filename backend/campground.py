@@ -2,13 +2,18 @@ from flask import request
 
 def getQuery(attribute, value, isCount):
     if not isCount:
-        query = "SELECT campground_name, max_occupancy, C.latitude AS latitude, C.longitude AS longitude, park_name "\
+        query = "SELECT campground_name, max_occupancy, CAST(C.latitude AS float) AS latitude, CAST(C.longitude AS float) AS longitude, park_name "\
                 "FROM CAMPGROUND AS C JOIN NATIONAL_PARK ON P_park_id = park_id "\
                 "WHERE {} = '{}'".format(attribute, value)
     else:
-        query = "SELECT {}, count(*) AS Count "\
-                "FROM CAMPGROUND JOIN NATIONAL_PARK ON P_park_id = park_id " \
-                "WHERE {} = '{}'".format(attribute, attribute, value)
+        if attribute == "C.latitude" or attribute == "C.longitude":
+            query = "SELECT CAST({} AS float) AS {}, count(*) AS Count " \
+                    "FROM CAMPGROUND AS C JOIN NATIONAL_PARK AS N ON C.P_park_id = N.park_id " \
+                    "WHERE {} = '{}'".format(attribute, attribute[2:], attribute, value)
+        else:
+            query = "SELECT {}, count(*) AS Count "\
+                    "FROM CAMPGROUND JOIN NATIONAL_PARK ON P_park_id = park_id " \
+                    "WHERE {} = '{}'".format(attribute, attribute, value)
     print(query)
     return query
 
