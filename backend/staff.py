@@ -33,9 +33,34 @@ def getQuery(attribute, value, isCount):
     
     #NEED TO EDIT THIS ELSE:
     else:
-        query = "SELECT {}, count(*) AS Count " \
-                "FROM STAFF " \
-                "WHERE {} = '{}'".format(attribute, attribute, value)
+        if attribute = "ssn" or attribute == "name" or attribute == "O_office_id" or attribute == "P_park_id": 
+            query = "SELECT {}, count(*) AS Count " \
+                    "FROM STAFF " \
+                    "WHERE {} = '{}'".format(attribute, attribute, value)
+        
+        elif attribute == "park_name":
+            query = "SELECT {}, count(*) AS COUNT "\
+                    "FROM STAFF S JOIN NATIONAL_PARK N ON S.P_park_id = N.park_id " \
+                    "WHERE {} = '{}'".format(attribute, value)
+            
+  
+        elif  attribute == "Overseeing_Area_Name":
+            query = "With OVERLOOKING_AREAS_STAFF as ( " \
+                    "SELECT HS.S_ssn as SSN, S.name as Staff_Name, HT.trail_name as Overlooking_Area_Name " \
+                    "FROM HIKING_TRAIL_STAFF HS  " \
+                    "JOIN STAFF S ON HS.S_ssn = S.ssn " \
+                    "JOIN HIKING_TRAIL HT ON HS.H_trail_id = HT.trail_id " \
+                    "UNION " \
+                    "SELECT A.S_ssn as SSN, S.name as Staff_Name, A.Att_name as Overlooking_Area_Name " \
+                    "FROM ATTRACTION_STAFF A " \
+                    "JOIN STAFF S ON A.S_ssn = S.ssn " \
+                    "UNION " \
+                    "SELECT C.S_ssn as SSN, S.name as Staff_Name, C.CG_name as Overlooking_Area_Name " \
+                    "FROM CAMPGROUND_STAFF C " \
+                    "JOIN STAFF S ON C.S_ssn = S.ssn) " \
+                    "SELECT COUNT(SSN)" \
+                    "FROM OVERLOOKING_AREAS_STAFF " \
+                    "WHERE {} = '{}'".format(attribute, value)
         
             
     print(query)
