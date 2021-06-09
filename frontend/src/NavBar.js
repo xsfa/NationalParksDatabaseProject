@@ -13,16 +13,19 @@ let params = { searchBy: '', filterValue: '', count: false }
 
 const NavBar = () => {
   const [result, setResult] = useState()
+  const [table, setTable] = useState()
+  const [attribute, setAttribute] = useState()
 
   const handleSelect = (eventkey, event) => {
     console.log(eventkey)
     console.log(event.target.name)
-    console.log(event.target.innerText)
     attributeSelected = eventkey
     tableSelected = event.target.name
     params['searchBy'] = attributeSelected
     endpoint = `/${tableSelected}`
     console.log(endpoint)
+    setTable(event.target.name)
+    setAttribute(event.target.innerText)
   }
 
   function handleClick() {
@@ -194,6 +197,12 @@ const NavBar = () => {
           </NavDropdown>
         </Nav>
       </Navbar>
+      {table && attribute && (
+        <p>
+          You selected {table[0].toUpperCase() + table.slice(1)} {attribute}
+        </p>
+      )}
+
       <Form.Group controlId="count_checkbox">
         <Form.Check
           onChange={handleClick}
@@ -201,6 +210,7 @@ const NavBar = () => {
           label="Result Count"
         />
       </Form.Group>
+      <br></br>
 
       <label> Search:</label>
       <input type="text" onChange={handleInput} />
