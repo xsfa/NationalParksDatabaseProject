@@ -31,7 +31,6 @@ def getQuery(attribute, value, isCount):
             "FROM OVERLOOKING_AREAS_STAFF " \
             "WHERE {} = '{}'".format(attribute, value)
     
-    #NEED TO EDIT THIS ELSE:
     else:
         if attribute = "ssn" or attribute == "name" or attribute == "O_office_id" or attribute == "P_park_id": 
             query = "SELECT {}, count(*) AS Count " \
