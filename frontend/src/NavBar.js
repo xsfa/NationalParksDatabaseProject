@@ -4,11 +4,16 @@ import './NavBar.css'
 import Search from './Search';
 
 var count = 0;
+
 var attributeSelected = ""
+var tableSelected = ""
 
 const handleSelect=(eventKey) => {
-    attributeSelected = eventKey
-    console.log("User selected ", attributeSelected)
+    //TODO: Split key into tableSelected and attributeSelected!!
+    const arr = eventKey.split("_")
+    tableSelected = arr[0]
+    attributeSelected = arr[1]
+    console.log("User selected ", attributeSelected, " in ", tableSelected)
 
 };
 
@@ -18,10 +23,10 @@ function handleClick(){
     count++
     if (count % 2 === 0) {
         console.log("dont result count")
-        return true
+        return false
     } else {
         console.log("result count")
-        return false
+        return true
     }
 }
 
@@ -105,13 +110,9 @@ const NavBar = () => {
 
             <div>
             </div>
-
-
             <Form.Group controlId="count_checkbox">
                 <Form.Check onChange={handleClick} type="checkbox" label="Result Count" />
             </Form.Group>
-
-
             <Search/>
         </>
     )
