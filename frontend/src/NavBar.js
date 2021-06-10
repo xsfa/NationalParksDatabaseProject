@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Nav, Navbar, NavDropdown, Form } from 'react-bootstrap'
 import axios from 'axios'
 import './NavBar.css'
-import Search from './Search'
-import Table from './Table'
+
 import Records from './Records'
 
 var count = 0
