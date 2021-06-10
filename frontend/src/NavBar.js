@@ -2,9 +2,9 @@ import React from 'react'
 import {Nav, Navbar, NavDropdown, Form} from 'react-bootstrap';
 import './NavBar.css'
 import Search from './Search';
+import Table from T
 
 var count = 0;
-
 var attributeSelected = ""
 var tableSelected = ""
 
