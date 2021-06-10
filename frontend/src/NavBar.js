@@ -4,6 +4,7 @@ import axios from 'axios'
 import './NavBar.css'
 import Search from './Search'
 import Table from './Table'
+import Records from './Records'
 
 var count = 0
 var attributeSelected = ''
@@ -198,24 +199,23 @@ const NavBar = () => {
           </NavDropdown>
         </Nav>
       </Navbar>
+      <br />
       {table && attribute && (
         <p>
           You selected {table[0].toUpperCase() + table.slice(1)} {attribute}
         </p>
       )}
 
-      <Form.Group controlId="count_checkbox">
-        <Form.Check
-          onChange={handleClick}
-          type="checkbox"
-          label="Result Count"
-        />
-      </Form.Group>
-      <br></br>
+      <input type="checkbox" id="count" name="count" onChange={handleClick} />
+      <label for="count"> Result Count</label>
+      <br />
+      <br />
 
       <label> Search:</label>
       <input type="text" onChange={handleInput} />
       <button onClick={handleSubmit}>submit</button>
+      <br></br>
+      {result && <Records data={result} />}
     </>
   )
 }

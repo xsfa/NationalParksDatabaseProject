@@ -1,22 +1,19 @@
-
-import React from 'react';
-import './App.css';
-import NavBar from './NavBar.js';
-
+import React from 'react'
+import './App.css'
+import NavBar from './NavBar.js'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
     <>
-    <div className="App">
-      <header className="App-header">
-          National Park Database
-      </header>
-      <>
-      <NavBar/>
+      <div className="App">
+        <header className="App-header">National Park Database</header>
+        <>
+          <NavBar />
+        </>
+      </div>
     </>
-    </div>
-    </>
-  );
+  )
 }
 
-export default App;
+export default App
