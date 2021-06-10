@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { Nav, Navbar, NavDropdown, Form } from 'react-bootstrap'
+import axios from 'axios'
 import './NavBar.css'
-import Search from './Search';
-import Table from T
+import Search from './Search'
+import Table from './Table'
 
-var count = 0;
-var attributeSelected = ""
-var tableSelected = ""
+var count = 0
+var attributeSelected = ''
+var tableSelected = ''
+let endpoint = ''
 
 let params = { searchBy: '', filterValue: '', count: false }
 
