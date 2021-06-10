@@ -7,14 +7,18 @@
 from flask import Flask
 import pymysql
 import json
+from flask_cors import CORS
 from animals import animals_query
 from flora import flora_query
 from hikingtrail import trail_query
 from visitors import visitors_query
 from attraction import attraction_query
 from campground import campground_query
+from national_park import national_park_query
+from staff import staff_query
 
 app = Flask(__name__)
+CORS(app)
 
 conn = pymysql.connect(
     host='database-1.chd1p5k2qlty.us-west-2.rds.amazonaws.com',
@@ -39,12 +43,13 @@ def execute_query(query):
     return {"columnNames": columns, "records": details}
 
 
-@app.route('/')
-def test():
-    cur = conn.cursor()
-    cur.execute("SELECT * FROM NATIONAL_PARK")
-    details = cur.fetchall()
-    return json.dumps(details)
+# @app.route('/')
+# def test():
+#     cur = conn.cursor()
+#     cur.execute("SELECT CAST(latitude AS float) FROM NATIONAL_PARK")
+#     details = cur.fetchall()
+#     print(details)
+#     return json.dumps(details)
 
 
 @app.route('/animals')
@@ -81,6 +86,19 @@ def attraction():
 def campground():
     query = campground_query()
     return execute_query(query)
+
+
+@app.route('/parks')
+def parks():
+    query = national_park_query()
+    return execute_query(query)
+
+
+@app.route('/staff')
+def staff():
+    query = staff_query()
+    return execute_query(query)
+
 
 
 if __name__ == '__main__':

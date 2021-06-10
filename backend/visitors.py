@@ -6,9 +6,14 @@ def getQuery(attribute, value, isCount):
                 "FROM VISITOR AS V JOIN NATIONAL_PARK AS N ON V.V_park_id = N.park_id "\
                 "WHERE {} = '{}'".format(attribute, value)
     else:
-        query = "SELECT {}, count(*) AS Count "\
-                "FROM VISITOR AS V JOIN NATIONAL_PARK AS N ON V.V_park_id = N.park_id " \
-                "WHERE {} = '{}'".format(attribute, attribute, value)
+        if attribute == "annual_pass_holder":
+            query = "SELECT CAST(annual_pass_holder AS UNSIGNED) AS Annual_Pass_Holder, count(*) AS Count " \
+                    "FROM VISITOR AS V JOIN NATIONAL_PARK AS N ON V.V_park_id = N.park_id " \
+                    "WHERE {} = '{}'".format(attribute, value)
+        else:
+            query = "SELECT {}, count(*) AS Count "\
+                    "FROM VISITOR AS V JOIN NATIONAL_PARK AS N ON V.V_park_id = N.park_id " \
+                    "WHERE {} = '{}'".format(attribute, attribute, value)
     print(query)
     return query
 
