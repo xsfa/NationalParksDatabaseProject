@@ -1,3 +1,10 @@
+/*-----------------------------------ATT_STAFF_Inserts.sql--------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in ATTRACTION_STAFF table in MySQL nationalParksDB database
+Precondition: ATTRACTION_STAFF table must be created in nationalParksDB prior to data insertion
+-----------------------------------------------------------------------------------------------------*/
+
 INSERT INTO ATTRACTION_STAFF VALUES ('893-99-2702','Old Faithful',133);
 INSERT INTO ATTRACTION_STAFF VALUES ('893-99-2702','Grand Prismatic Spring',133);
 INSERT INTO ATTRACTION_STAFF VALUES ('893-99-2702','Yellowstone Lake',133);
