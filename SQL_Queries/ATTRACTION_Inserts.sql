@@ -1,3 +1,10 @@
+/*-----------------------------------ATTRACTION_Inserts.sql--------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in ATTRACTION table in MySQL nationalParksDB database
+Precondition: ATTRACTION table must be created in nationalParksDB prior to data insertion
+-----------------------------------------------------------------------------------------------------*/
+
 INSERT into ATTRACTION values(133, 'Old Faithful', 'Geyser', 44.2848973, -110.1914074);
 INSERT into ATTRACTION values(133, 'Grand Prismatic Spring', 'Hot Springs', 4.5736638, -110.1985125);
 INSERT into ATTRACTION values(133, 'Yellowstone Lake', 'Lake', 44.5079579, -110.5003215);
