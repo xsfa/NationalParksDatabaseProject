@@ -1,3 +1,11 @@
+
+/*-----------------------------------OFFICE_Inserts.sql-----------------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in OFFICE table in MySQL nationalParksDB database
+Precondition: OFFICE table must be created in nationalParksDB prior to data insertion
+-------------------------------------------------------------------------------------------------------*/
+
 insert into OFFICE (office_id, office_name, address) values (10001, 'Sales', '15920 Marcy Place');
 insert into OFFICE (office_id, office_name, address) values (10002, 'Product Management', '7797 Division Court');
 insert into OFFICE (office_id, office_name, address) values (10003, 'Accounting', '01272 Nevada Crossing');
