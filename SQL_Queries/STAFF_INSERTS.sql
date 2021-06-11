@@ -1,3 +1,10 @@
+/*-----------------------------------STAFF_Inserts.sql-----------------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in STAFF table in MySQL nationalParksDB database
+Precondition: STAFF table must be created in nationalParksDB prior to data insertion
+-------------------------------------------------------------------------------------------------------*/
+
 INSERT INTO STAFF VALUES ('893-99-2702','Korry Need','Female',4932.08,'675-07-3597',10001,133);
 INSERT INTO STAFF VALUES ('399-52-4749','Rubin Andrysek','Male',5659.11,'675-07-3597',10001,133);
 INSERT INTO STAFF VALUES ('184-91-0490','Kriste Caffery','Female',5801.61,'675-07-3597',10001,133);
