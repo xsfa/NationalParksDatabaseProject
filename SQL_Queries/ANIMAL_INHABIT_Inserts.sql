@@ -1,3 +1,11 @@
+
+/*-----------------------------------ANIMAL_INHABIT_Inserts.sql--------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in ANIMAL_INHABIT table in MySQL nationalParksDB database
+Precondition: ANIMAL_INHABIT table must be created in nationalParksDB prior to data insertion
+-----------------------------------------------------------------------------------------------------*/
+
 INSERT INTO ANIMAL_INHABIT(A_species,A_park_id,Est_pop) VALUES ('Deer, roe',100,200);
 INSERT INTO ANIMAL_INHABIT(A_species,A_park_id,Est_pop) VALUES ('Deer, roe',101,201);
 INSERT INTO ANIMAL_INHABIT(A_species,A_park_id,Est_pop) VALUES ('Deer, roe',102,202);
