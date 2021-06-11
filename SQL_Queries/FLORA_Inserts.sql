@@ -1,3 +1,10 @@
+/*-----------------------------------FLORA_Inserts.sql---------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in FLORA table in MySQL nationalParksDB database
+Precondition: FLORA table must be created in nationalParksDB prior to data insertion
+-------------------------------------------------------------------------------------------------*/
+
 insert into FLORA (species) values ('Chaparral Bird''s-foot Trefoil');
 insert into FLORA (species) values ('Degel''s Wart Lichen');
 insert into FLORA (species) values ('San Francisco Campion');
