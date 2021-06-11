@@ -1,3 +1,10 @@
+/*-----------------------------------NATIONAL_PARK_Inserts.sql-----------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in NATIONAL_PARK table in MySQL nationalParksDB database
+Precondition: NATIONAL_PARK table must be created in nationalParksDB prior to data insertion
+-------------------------------------------------------------------------------------------------------*/
+
 INSERT into NATIONAL_PARK values(100, 'Rocky Mountain National Park', 'Colorado', 40.343182,-105.688103);
 INSERT into NATIONAL_PARK values(101, 'Danville Conservation Area', 'Missouri', 38.65097, -91.504852);
 INSERT into NATIONAL_PARK values(102, 'Sand Harbor State Park', 'Nevada', 39.198364, -119.930984);
