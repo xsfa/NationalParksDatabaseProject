@@ -1,3 +1,9 @@
+/*-----------------------------------VISITOR_Inserts.sql--------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 
+Purpose: Insert statements to insert data in VISITOR table in MySQL nationalParksDB database
+Precondition: VISTOR table must be created in nationalParksDB prior to data insertion
+----------------------------------------------------------------------------------------------*/
 INSERT INTO VISITOR(V_park_id,fname,lname,gender,dob ,Visitor_num,Annual_pass_holder) VALUES (101,'Marianna','McAllen','Female','2000-05-31',1,1);
 INSERT INTO VISITOR(V_park_id,fname,lname,gender,dob ,Visitor_num,Annual_pass_holder) VALUES (101,'Eolande','Boulde','Male','2001-01-25',2,1);
 INSERT INTO VISITOR(V_park_id,fname,lname,gender,dob ,Visitor_num,Annual_pass_holder) VALUES (101,'Natty','Dono','Non-binary','2000-07-24',3,1);
