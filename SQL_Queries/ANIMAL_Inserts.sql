@@ -1,4 +1,4 @@
-/*-----------------------------------ANIMAL__Inserts.sql--------------------------------------
+/*-----------------------------------ANIMAL_Inserts.sql--------------------------------------
 Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
 Course: CSS475 A
 Purpose: Insert statements to insert data in ANIMAL table in MySQL nationalParksDB database
