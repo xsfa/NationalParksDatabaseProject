@@ -1,4 +1,9 @@
-﻿CREATE TABLE NATIONAL_PARK
+/*-----------------------------------DB_CREATE.sql--------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 
+Purpose: Create Statements for creation of tables in MySQL nationalParkDB Database
+---------------------------------------------------------------------------------------*/
+CREATE TABLE NATIONAL_PARK
 (
 	park_id INT NOT NULL CHECK (park_id >=100 AND park_id <= 999),
 	park_name VARCHAR(70) NOT NULL,
