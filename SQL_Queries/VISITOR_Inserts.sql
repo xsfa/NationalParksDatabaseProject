@@ -1,6 +1,6 @@
 /*-----------------------------------VISITOR_Inserts.sql--------------------------------------
 Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
-Course: CSS475 
+Course: CSS475 A
 Purpose: Insert statements to insert data in VISITOR table in MySQL nationalParksDB database
 Precondition: VISTOR table must be created in nationalParksDB prior to data insertion
 ----------------------------------------------------------------------------------------------*/
