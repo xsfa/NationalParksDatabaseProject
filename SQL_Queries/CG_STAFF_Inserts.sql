@@ -1,3 +1,10 @@
+/*-----------------------------------CG_STAFF_Inserts.sql---------------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in CAMPGROUND_STAFF table in MySQL nationalParksDB database
+Precondition: CAMPGROUND_STAFF table must be created in nationalParksDB prior to data insertion
+-------------------------------------------------------------------------------------------------------*/
+
 INSERT INTO CAMPGROUND_STAFF VALUES ('893-99-2702','Fishing Bridge RV Park',133);
 INSERT INTO CAMPGROUND_STAFF VALUES ('893-99-2702','Madison Campground',133);
 INSERT INTO CAMPGROUND_STAFF VALUES ('893-99-2702','Grant Village Campground',133);
