@@ -1,3 +1,10 @@
+/*-----------------------------------ANIMAL__Inserts.sql--------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in ANIMAL table in MySQL nationalParksDB database
+Precondition: ANIMAL table must be created in nationalParksDB prior to data insertion
+----------------------------------------------------------------------------------------------*/
+
 insert into ANIMAL (species) values ('Lesser mouse lemur');
 insert into ANIMAL (species) values ('Koala');
 insert into ANIMAL (species) values ('Western grey kangaroo');
