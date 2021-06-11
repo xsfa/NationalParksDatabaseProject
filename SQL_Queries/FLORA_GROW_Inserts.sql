@@ -1,3 +1,11 @@
+  
+/*-----------------------------------FLORA_GROW_Inserts.sql---------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in FLORA_GROW table in MySQL nationalParksDB database
+Precondition: FLORA_GROW table must be created in nationalParksDB prior to data insertion
+-------------------------------------------------------------------------------------------------*/
+
 INSERT INTO FLORA_GROW(F_species,F_park_id) VALUES ('Pink Tickseed',100);
 INSERT INTO FLORA_GROW(F_species,F_park_id) VALUES ('Pink Tickseed',101);
 INSERT INTO FLORA_GROW(F_species,F_park_id) VALUES ('Pink Tickseed',102);
