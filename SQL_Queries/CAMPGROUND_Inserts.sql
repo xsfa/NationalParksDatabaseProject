@@ -1,3 +1,10 @@
+/*-----------------------------------CAMPGROUND_Inserts.sql--------------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in CAMPGROUND table in MySQL nationalParksDB database
+Precondition: CAMPGROUND table must be created in nationalParksDB prior to data insertion
+-----------------------------------------------------------------------------------------------------*/
+
 INSERT into CAMPGROUND values(133, 'Fishing Bridge RV Park', 89, 44.1159034, -110.6453634);
 INSERT into CAMPGROUND values(133, 'Madison Campground', 147, 44.2714612, -110.060291);
 INSERT into CAMPGROUND values(133, 'Grant Village Campground', 90, 44.3579436, -110.6943689);
