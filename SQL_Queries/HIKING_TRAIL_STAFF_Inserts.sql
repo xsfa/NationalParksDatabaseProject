@@ -1,3 +1,10 @@
+/*-----------------------------------HIKING_TRAIL_STAFF_Inserts.sql-----------------------------------
+Created by Shushmitha Radjaram, Tesfa Shenkute, Yan Hong
+Course: CSS475 A
+Purpose: Insert statements to insert data in HIKING_TRAIL_STAFF table in MySQL nationalParksDB database
+Precondition: HIKING_TRAIL_STAFF table must be created in nationalParksDB prior to data insertion
+-------------------------------------------------------------------------------------------------------*/
+
 INSERT INTO HIKING_TRAIL_STAFF VALUES ('893-99-2702',1000);
 INSERT INTO HIKING_TRAIL_STAFF VALUES ('893-99-2702',1001);
 INSERT INTO HIKING_TRAIL_STAFF VALUES ('893-99-2702',1002);
